@@ -2,6 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import Hello from './Components/Hello/Hello'
 import EffectDemo from './Components/EffectDemo/EffectDemo'
+import InputDemo from './Components/InputDemo/InputDemo'
+
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,7 +21,7 @@ function App() {
       <button onClick={() => setCount(count - 1)}>Down</button>
       <button onClick={()=>handleClick()}>Click me</button>
       <EffectDemo/>
-
+      <InputDemo/>
     </>
   )
 }
